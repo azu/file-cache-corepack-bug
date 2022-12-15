@@ -1,0 +1,17 @@
+{
+  "name": "file-cache-corepack-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "create-validator-ts index.ts --cache",
+    "test-npx": "npx create-validator-ts index.ts --cache"
+  },
+  "author": "azu",
+  "license": "MIT",
+  "devDependencies": {
+    "create-validator-ts": "^4.0.2",
+    "typescript": "^4.9.4"
+  },
+  "packageManager": "npm@6.14.16"
+}
