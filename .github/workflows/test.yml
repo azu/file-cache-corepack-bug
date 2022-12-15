@@ -8,6 +8,7 @@ jobs:
   npm-6:
     runs-on: ${{ matrix.os }}
     strategy:
+      fail-fast: false
       matrix:
         node-version: [14,16,18]
         os: [macOS-latest, windows-latest, ubuntu-latest]
@@ -27,6 +28,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
+        fail-fast: false
         node-version: [14,16,18]
         os: [macOS-latest, windows-latest, ubuntu-latest]
     name: "Build on Node.js: ${{ matrix.node-version }} OS: ${{ matrix.os }}"
