@@ -12,7 +12,7 @@ jobs:
       matrix:
         node-version: [14,16,18]
         os: [macOS-latest, windows-latest, ubuntu-latest]
-    name: "Build on Node.js: ${{ matrix.node-version }} OS: ${{ matrix.os }}"
+    name: "npm 6, Node.js: ${{ matrix.node-version }} OS: ${{ matrix.os }}"
     steps:
       - uses: actions/checkout@v3
       - name: "Node.js ${{ matrix.node-version }}"
@@ -31,7 +31,7 @@ jobs:
         fail-fast: false
         node-version: [14,16,18]
         os: [macOS-latest, windows-latest, ubuntu-latest]
-    name: "Build on Node.js: ${{ matrix.node-version }} OS: ${{ matrix.os }}"
+    name: "npm 8, Node:${{ matrix.node-version }} OS: ${{ matrix.os }}"
     steps:
       - uses: actions/checkout@v3
       - name: "Node.js ${{ matrix.node-version }}"
