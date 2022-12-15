@@ -18,6 +18,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+      - run: corepack enable npm
       - run: npm install -g npe && npe packageManager "npm@6.14.16"
       - run: npm install
       - run: npm test
@@ -35,6 +36,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+      - run: corepack enable npm
       - run: npm install -g npe && npe packageManager "npm@8.19.1"
       - run: npm install
       - run: npm test
