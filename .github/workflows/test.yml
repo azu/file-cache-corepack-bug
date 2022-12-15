@@ -27,8 +27,8 @@ jobs:
   npm-8:
     runs-on: ${{ matrix.os }}
     strategy:
+      fail-fast: false
       matrix:
-        fail-fast: false
         node-version: [14,16,18]
         os: [macOS-latest, windows-latest, ubuntu-latest]
     name: "npm 8, Node:${{ matrix.node-version }} OS: ${{ matrix.os }}"
